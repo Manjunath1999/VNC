@@ -5,7 +5,7 @@ const rightarrow = require("./assets/right-arrow.jpg");
 const bgImg2 = require("./assets/logo2.jpg");
 const bgImg3 = require("./assets/download-icon.png");
 
-export default function Mapping() {
+export default function Mapping({ navigation }) {
   return (
     <View style={{ flex: 1, width: "100%", backgroundColor: "#000" }}>
       <ImageBackground
@@ -81,6 +81,7 @@ export default function Mapping() {
             <ImageBackground
               source={rightarrow}
               style={{ width: 20, height: 20 }}
+              onPress={() => navigation.navigate('Mapping')}
             ></ImageBackground>
           </TouchableOpacity>
         </View>

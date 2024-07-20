@@ -70,6 +70,7 @@ export default function Home({ navigation }) {
             <ImageBackground
               source={rightarrow}
               style={{ width: 20, height: 20 }}
+              onPress={() => navigation.navigate('Mapping')}
             ></ImageBackground>
           </TouchableOpacity>
         </View>
